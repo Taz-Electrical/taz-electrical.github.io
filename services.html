@@ -3,114 +3,229 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | Taz Electrical</title>
-  <meta
-    name="description"
-    content="Full range of residential and commercial electrical services from Taz Electrical, serving Gray and St Marys."
-  />
+  <title>Services | Taz Electrical — Gray &amp; St Marys</title>
+  <meta name="description" content="Rewiring, switchboard upgrades, lighting, power points, commercial work and emergency callouts — the full range of Taz Electrical services." />
+  <meta name="theme-color" content="#0a0f1a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0f1a'/%3E%3Cpath d='M36 6 14 38h12l-4 20 22-32H32l4-20z' fill='%23ffb52e'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">Taz<span>Electrical</span></a>
-      <div class="nav">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Taz Electrical — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z" fill="#141005"/></svg>
+        </span>
+        <span class="brand-name">Taz<em>Electrical</em></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html" aria-current="page">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <a href="tel:+61000000000" class="nav-cta">Call Now</a>
-      </div>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+        <div class="nav-actions">
+          <!-- TODO: replace with Taz's real phone number -->
+          <a class="btn btn-primary btn-sm" href="tel:+61000000000">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            0000 000 000
+          </a>
+        </div>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main>
-    <section class="hero" style="padding: 56px 0;">
+  <main id="main">
+
+    <section class="page-hero">
       <div class="container">
-        <h1>Our Services</h1>
-        <p>Complete electrical solutions for homes and businesses in Gray, St Marys &amp; nearby areas.</p>
+        <span class="eyebrow" data-reveal>Services</span>
+        <h1 data-reveal>If it's electrical,<br /><span class="text-volt">we handle it.</span></h1>
+        <p class="lead" data-reveal style="--d:.08s">Complete electrical solutions for homes and businesses across Gray, St&nbsp;Marys and surrounding areas.</p>
       </div>
     </section>
 
-    <section>
+    <section class="section" style="padding-top: clamp(20px, 3vw, 40px);">
       <div class="container">
-        <div class="service-detail">
-          <div class="icon">&#127968;</div>
+
+        <div class="service-row" id="wiring" data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg></div>
           <div>
-            <h3>Residential Wiring &amp; Rewiring</h3>
-            <p>New home wiring, full and partial rewires, and repairs for older properties brought up to current standards.</p>
+            <h3>Wiring &amp; rewiring</h3>
+            <p>Complete wiring for new builds and renovations, plus full or partial rewires that bring older properties safely up to current standards.</p>
+            <ul class="tick-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> New home wiring</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Full &amp; partial rewires</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Renovation &amp; extension wiring</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Old wiring safety checks</li>
+            </ul>
           </div>
         </div>
-        <div class="service-detail">
-          <div class="icon">&#9889;</div>
+
+        <div class="service-row" id="switchboards" data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><path d="M2 14h4M10 8h4M18 16h4"/></svg></div>
           <div>
-            <h3>Switchboard &amp; Safety Switch Upgrades</h3>
-            <p>Modernise old fuse boxes and ensure your home is protected with compliant safety switches.</p>
+            <h3>Switchboard &amp; safety switch upgrades</h3>
+            <p>Old fuse boxes replaced with modern switchboards and compliant safety switches — the single best upgrade for protecting your home and family.</p>
+            <ul class="tick-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Switchboard replacements</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Safety switch (RCD) installs</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Fuse box modernisation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Compliance inspections</li>
+            </ul>
           </div>
         </div>
-        <div class="service-detail">
-          <div class="icon">&#128161;</div>
+
+        <div class="service-row" id="lighting" data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.8.7 1.3 1.5 1.5 2.5h5c.2-1 .7-1.8 1.5-2.5A6 6 0 0 0 12 3z"/></svg></div>
           <div>
-            <h3>Lighting Installation &amp; Design</h3>
-            <p>Indoor and outdoor lighting, downlights, and energy-efficient LED upgrades.</p>
+            <h3>Lighting installation &amp; design</h3>
+            <p>Indoor, outdoor and garden lighting — from single fittings to whole-home LED upgrades that cut your power bills.</p>
+            <ul class="tick-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> LED downlights</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Outdoor &amp; security lighting</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Ceiling fans &amp; fittings</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Energy-efficient upgrades</li>
+            </ul>
           </div>
         </div>
-        <div class="service-detail">
-          <div class="icon">&#128268;</div>
+
+        <div class="service-row" id="power-points" data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg></div>
           <div>
-            <h3>Power Points &amp; General Wiring</h3>
-            <p>Additional power points, data points, and general electrical wiring for renovations and extensions.</p>
+            <h3>Power points &amp; data</h3>
+            <p>Extra outlets where you actually need them — including USB points, TV points and data cabling for the home office.</p>
+            <ul class="tick-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> New power points</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> USB &amp; smart outlets</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Data &amp; TV points</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Appliance circuits</li>
+            </ul>
           </div>
         </div>
-        <div class="service-detail">
-          <div class="icon">&#127970;</div>
+
+        <div class="service-row" id="commercial" data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2M10 21v-3h4v3"/></svg></div>
           <div>
-            <h3>Commercial Electrical Work</h3>
-            <p>Fit-outs, maintenance, and compliance electrical work for local businesses.</p>
+            <h3>Commercial electrical work</h3>
+            <p>Reliable fit-outs, maintenance and compliance work for shops, offices and local businesses — scheduled around your trading hours.</p>
+            <ul class="tick-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Shop &amp; office fit-outs</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Maintenance contracts</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Test &amp; tag</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Emergency &amp; exit lighting</li>
+            </ul>
           </div>
         </div>
-        <div class="service-detail">
-          <div class="icon">&#128295;</div>
+
+        <div class="service-row" id="repairs" data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
           <div>
-            <h3>Repairs &amp; Fault Finding</h3>
-            <p>Diagnosing and fixing electrical faults quickly and safely.</p>
+            <h3>Fault finding &amp; repairs</h3>
+            <p>Tripping breakers, dead outlets, flickering lights — we track down the cause fast and fix it properly the first time.</p>
+            <ul class="tick-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Tripping safety switches</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Dead circuits &amp; outlets</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Flickering lights</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Appliance repairs</li>
+            </ul>
           </div>
         </div>
-        <div class="service-detail">
-          <div class="icon">&#9200;</div>
+
+      </div>
+    </section>
+
+    <!-- ============ EMERGENCY ============ -->
+    <section class="section tinted" id="emergency">
+      <div class="container">
+        <div class="cta-band" data-reveal>
           <div>
-            <h3>Emergency Callouts</h3>
-            <p>Urgent electrical issues handled promptly to keep your home or business safe.</p>
+            <span class="eyebrow">Emergency callouts</span>
+            <h2>Something sparking, smoking or dead?</h2>
+            <p>Don't wait — electrical faults can turn dangerous quickly. Call now and we'll get you safe.</p>
+          </div>
+          <div class="cta-actions">
+            <!-- TODO: real phone number -->
+            <a href="tel:+61000000000" class="btn btn-primary btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call now — 0000 000 000
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="alt">
+    <!-- ============ CTA ============ -->
+    <section class="section">
       <div class="container" style="text-align:center;">
-        <h2>Don't see what you need?</h2>
-        <p style="color: var(--gray-text); max-width: 560px; margin: 0 auto 24px;">
-          Get in touch — if it's electrical, chances are Taz Electrical can help.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Not sure what you need?</span>
+          <h2>Describe the job — we'll take it from there</h2>
+          <p>If it's electrical, chances are Taz Electrical can help. Get in touch for straight answers and a free quote.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-reveal>Get a free quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </div>
     </section>
   </main>
 
+  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container">
-      <div>
-        <strong>Taz Electrical</strong><br />
-        Serving Gray, St Marys &amp; surrounding areas
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="Taz Electrical — home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z" fill="#141005"/></svg>
+            </span>
+            <span class="brand-name">Taz<em>Electrical</em></span>
+          </a>
+          <p>Safe, tidy, code-compliant electrical work for homes and businesses across Gray, St Marys and surrounding areas.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#wiring">Wiring &amp; rewiring</a></li>
+            <li><a href="services.html#switchboards">Switchboards</a></li>
+            <li><a href="services.html#lighting">Lighting &amp; LED</a></li>
+            <li><a href="services.html#emergency">Emergency callouts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <!-- TODO: replace with real phone/email -->
+            <li><a href="tel:+61000000000">0000 000 000</a></li>
+            <li><a href="mailto:info@tazelectrical.example">info@tazelectrical.example</a></li>
+            <li>Gray &amp; St Marys, Australia</li>
+            <li>Mon–Fri, 7am–5pm</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <a href="tel:+61000000000">Call Now</a> &middot;
-        <a href="mailto:info@tazelectrical.example">Email Us</a>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Taz Electrical. All rights reserved.</span>
+        <!-- TODO: real electrical licence number -->
+        <span>Licensed electrician · Lic. No. 000000</span>
       </div>
-      <div>&copy; 2026 Taz Electrical. All rights reserved.</div>
     </div>
   </footer>
 

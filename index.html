@@ -4,129 +4,374 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taz Electrical | Licensed Electrician — Gray &amp; St Marys</title>
-  <meta
-    name="description"
-    content="Taz Electrical provides reliable residential and commercial electrical services in the Gray and St Marys area. Call today for a free quote."
-  />
+  <meta name="description" content="Taz Electrical delivers safe, tidy, code-compliant electrical work across Gray, St Marys and surrounding areas. Rewires, switchboards, lighting and emergency callouts." />
+  <meta name="theme-color" content="#0a0f1a" />
+  <meta property="og:title" content="Taz Electrical — Power done properly" />
+  <meta property="og:description" content="Licensed electrician serving Gray & St Marys. Free quotes, upfront pricing, emergency callouts." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0f1a'/%3E%3Cpath d='M36 6 14 38h12l-4 20 22-32H32l4-20z' fill='%23ffb52e'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">Taz<span>Electrical</span></a>
-      <div class="nav">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Taz Electrical — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z" fill="#141005"/></svg>
+        </span>
+        <span class="brand-name">Taz<em>Electrical</em></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <ul class="nav-links">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <!-- TODO: replace with Taz's real phone number -->
-        <a href="tel:+61000000000" class="nav-cta">Call Now</a>
-      </div>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+        <div class="nav-actions">
+          <!-- TODO: replace with Taz's real phone number -->
+          <a class="btn btn-primary btn-sm" href="tel:+61000000000">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            0000 000 000
+          </a>
+        </div>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main>
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="container">
-        <h1>Trusted Electrical Services in Gray &amp; St Marys</h1>
-        <p>
-          Licensed, local, and reliable. Taz Electrical handles everything from
-          switchboard upgrades to full home rewires — no job too big or small.
-        </p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
-          <a href="services.html" class="btn btn-secondary">View Services</a>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <!-- TODO: confirm exact state / service area wording -->
+          <span class="hero-eyebrow"><span class="dot" aria-hidden="true"></span> Licensed electrician · Gray &amp; St Marys</span>
+          <h1>Power done <span class="text-volt">properly.</span></h1>
+          <p class="lead">
+            From switchboard upgrades to full rewires, Taz Electrical delivers safe,
+            tidy, code-compliant work across Gray, St&nbsp;Marys and surrounds —
+            on time, and at a fair price.
+          </p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a free quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="services.html" class="btn btn-ghost btn-lg">Explore services</a>
+          </div>
+          <ul class="hero-trust">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Licensed &amp; insured</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Upfront pricing</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg> Emergency callouts</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="circuit-panel">
+            <svg viewBox="0 0 520 420" fill="none">
+              <defs>
+                <radialGradient id="chipGlow" cx="0.5" cy="0.5" r="0.5">
+                  <stop offset="0%" stop-color="#ffb52e" stop-opacity="0.28"/>
+                  <stop offset="100%" stop-color="#ffb52e" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <circle cx="260" cy="210" r="130" fill="url(#chipGlow)"/>
+
+              <!-- dim background traces -->
+              <path class="trace dim" d="M60 30 V120 H160"/>
+              <path class="trace dim" d="M470 390 H360 V300"/>
+              <path class="trace dim" d="M500 200 H460"/>
+              <path class="trace dim" d="M20 210 H70"/>
+
+              <!-- main traces -->
+              <path class="trace" d="M235 160 V100 H120 V48"/>
+              <path class="trace" d="M285 160 V76 H420 V30"/>
+              <path class="trace" d="M210 185 H130 V90 H60"/>
+              <path class="trace" d="M210 235 H100 V330 H36"/>
+              <path class="trace" d="M310 195 H400 V80 H470"/>
+              <path class="trace" d="M310 240 H430 V330 H480"/>
+              <path class="trace" d="M240 260 V340 H150 V395"/>
+              <path class="trace" d="M280 260 V310 H370 V385"/>
+
+              <!-- animated current -->
+              <path class="trace flow" d="M235 160 V100 H120 V48"/>
+              <path class="trace flow delay-1" d="M310 195 H400 V80 H470"/>
+              <path class="trace flow delay-2" d="M240 260 V340 H150 V395"/>
+
+              <!-- nodes -->
+              <circle class="node lit" cx="120" cy="48" r="6"/>
+              <circle class="node" cx="420" cy="30" r="5"/>
+              <circle class="node" cx="60" cy="90" r="5"/>
+              <circle class="node" cx="36" cy="330" r="5"/>
+              <circle class="node lit" cx="470" cy="80" r="6"/>
+              <circle class="node" cx="480" cy="330" r="5"/>
+              <circle class="node lit" cx="150" cy="395" r="6"/>
+              <circle class="node" cx="370" cy="385" r="5"/>
+
+              <!-- central chip -->
+              <rect x="210" y="160" width="100" height="100" rx="18" fill="#111a2e" stroke="rgba(255,181,46,0.5)" stroke-width="1.5"/>
+              <rect x="210" y="160" width="100" height="100" rx="18" fill="none" stroke="rgba(255,181,46,0.12)" stroke-width="8"/>
+              <path d="M272 176l-30 40h20l-8 28 34-40h-21l5-28z" fill="#ffb52e"/>
+            </svg>
+          </div>
+          <span class="chip-float c1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+            24/7 emergency
+          </span>
+          <span class="chip-float c2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3z"/><path d="m9 11.5 2 2 4-4"/></svg>
+            Fully licensed
+          </span>
+          <span class="chip-float c3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Safety first
+          </span>
         </div>
       </div>
     </section>
 
-    <section>
+    <!-- ============ STATS ============ -->
+    <section class="section" style="padding-top: 0;">
       <div class="container">
-        <div class="section-heading">
-          <h2>Why Choose Taz Electrical</h2>
-          <p>Straightforward, honest electrical work from a local tradesperson you can trust.</p>
+        <div class="stats" data-reveal>
+          <!-- TODO: replace stats with Taz's real numbers -->
+          <div class="stat"><span class="num">10+</span><span class="lbl">Years on the tools</span></div>
+          <div class="stat"><span class="num">100%</span><span class="lbl">Licensed &amp; insured</span></div>
+          <div class="stat"><span class="num">24/7</span><span class="lbl">Emergency callouts</span></div>
+          <div class="stat"><span class="num">Free</span><span class="lbl">No-obligation quotes</span></div>
         </div>
-        <div class="grid">
-          <div class="card">
-            <div class="icon">&#9889;</div>
-            <h3>Licensed &amp; Insured</h3>
-            <p>Fully licensed electrician with insured, code-compliant workmanship on every job.</p>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section tinted">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">What we do</span>
+          <h2>Every job, wired right</h2>
+          <p>Residential and commercial electrical work — handled end to end, tested, and left tidy.</p>
+        </div>
+        <div class="grid cols-3">
+          <div class="card" data-reveal>
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg></div>
+            <h3>Wiring &amp; rewiring</h3>
+            <p>New builds, renovations and full rewires that bring older homes up to today's standards.</p>
+            <a class="card-link" href="services.html#wiring">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
-          <div class="card">
-            <div class="icon">&#128337;</div>
-            <h3>Fast Response</h3>
-            <p>Prompt call-backs and flexible scheduling, including urgent callouts when you need them.</p>
+          <div class="card" data-reveal style="--d:.08s">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><path d="M2 14h4M10 8h4M18 16h4"/></svg></div>
+            <h3>Switchboard upgrades</h3>
+            <p>Modern switchboards and safety switches that protect your family and your property.</p>
+            <a class="card-link" href="services.html#switchboards">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
-          <div class="card">
-            <div class="icon">&#128176;</div>
-            <h3>Upfront Pricing</h3>
-            <p>Clear quotes before work starts — no surprise fees on your invoice.</p>
+          <div class="card" data-reveal style="--d:.16s">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.8.7 1.3 1.5 1.5 2.5h5c.2-1 .7-1.8 1.5-2.5A6 6 0 0 0 12 3z"/></svg></div>
+            <h3>Lighting &amp; LED</h3>
+            <p>Downlights, outdoor and garden lighting, and energy-saving LED upgrades throughout.</p>
+            <a class="card-link" href="services.html#lighting">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
-          <div class="card">
-            <div class="icon">&#128205;</div>
-            <h3>Local to Gray &amp; St Marys</h3>
-            <p>Proudly serving the local community and surrounding areas.</p>
+          <div class="card" data-reveal>
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg></div>
+            <h3>Power points &amp; data</h3>
+            <p>Extra power points, USB outlets and data points exactly where you need them.</p>
+            <a class="card-link" href="services.html#power-points">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <div class="card" data-reveal style="--d:.08s">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2M10 21v-3h4v3"/></svg></div>
+            <h3>Commercial work</h3>
+            <p>Fit-outs, maintenance and compliance for shops, offices and local businesses.</p>
+            <a class="card-link" href="services.html#commercial">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <div class="card" data-reveal style="--d:.16s">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <h3>Fault finding &amp; repairs</h3>
+            <p>Tripping switches, dead circuits, flickering lights — diagnosed fast and fixed properly.</p>
+            <a class="card-link" href="services.html#repairs">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <div class="card emergency" data-reveal>
+            <div class="em-copy">
+              <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></div>
+              <div>
+                <h3>Electrical emergency?</h3>
+                <p>No power, burning smells or exposed wiring — call now for a fast response.</p>
+              </div>
+            </div>
+            <!-- TODO: real phone number -->
+            <a href="tel:+61000000000" class="btn btn-primary">Call Taz now
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="alt">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Our Services</h2>
-          <p>A snapshot of what we offer — see the full list on the Services page.</p>
+    <!-- ============ WHY TAZ ============ -->
+    <section class="section">
+      <div class="container split">
+        <div data-reveal>
+          <span class="eyebrow">Why Taz Electrical</span>
+          <h2 style="font-size: clamp(1.9rem, 3.8vw, 2.7rem);">A local sparkie who treats your place like his own</h2>
+          <ul class="feature-list">
+            <li>
+              <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3z"/><path d="m9 11.5 2 2 4-4"/></svg></div>
+              <div>
+                <h3>Safety, always</h3>
+                <p>Every job tested and certified to Australian standards — no shortcuts, ever.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+              <div>
+                <h3>On time, every time</h3>
+                <p>Clear arrival windows and a call-ahead so you're never left waiting around.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 7H9.5a2.5 2.5 0 0 0 0 5h5a2.5 2.5 0 0 1 0 5H6"/></svg></div>
+              <div>
+                <h3>Upfront pricing</h3>
+                <p>A clear quote before work starts. The price we agree is the price you pay.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <h3>Genuinely local</h3>
+                <p>Based right here in the Gray &amp; St Marys area — quick to reach you, easy to reach us.</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="grid">
-          <div class="card">
-            <h3>Residential Wiring</h3>
-            <p>New wiring, rewires, and repairs for homes of any age.</p>
+        <div class="photo-frame" data-reveal style="--d:.1s">
+          <!-- TODO: replace with a real photo of Taz on the job -->
+          <div class="ph-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 15-4.5-4.5L9 18"/></svg>
+            <p>Photo of Taz on the job<br />coming soon</p>
           </div>
-          <div class="card">
-            <h3>Switchboard Upgrades</h3>
-            <p>Safety switch and switchboard upgrades to modern standards.</p>
-          </div>
-          <div class="card">
-            <h3>Lighting Installation</h3>
-            <p>Indoor, outdoor, and energy-efficient LED lighting solutions.</p>
-          </div>
-          <div class="card">
-            <h3>Emergency Callouts</h3>
-            <p>Fast, reliable help when something's gone wrong.</p>
-          </div>
-        </div>
-        <div style="text-align:center; margin-top: 32px;">
-          <a href="services.html" class="btn btn-primary">See All Services</a>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container" style="text-align:center;">
-        <h2>Ready to get started?</h2>
-        <p style="color: var(--gray-text); max-width: 560px; margin: 0 auto 24px;">
-          Reach out today for a free, no-obligation quote on your next electrical job.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Contact Taz Electrical</a>
+    <!-- ============ PROCESS ============ -->
+    <section class="section tinted">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">How it works</span>
+          <h2>Three steps to sorted</h2>
+        </div>
+        <div class="steps">
+          <div class="step" data-reveal>
+            <h3>Tell us the job</h3>
+            <p>Call, email or use the enquiry form. Describe what you need — photos help too.</p>
+          </div>
+          <div class="step" data-reveal style="--d:.08s">
+            <h3>Get a clear quote</h3>
+            <p>You'll get an upfront, no-obligation quote and a time that suits your schedule.</p>
+          </div>
+          <div class="step" data-reveal style="--d:.16s">
+            <h3>Done &amp; tested</h3>
+            <p>Work completed to standard, fully tested, rubbish gone, and everything left tidy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials intentionally omitted until Taz provides real customer reviews.
+         TODO: add a reviews section here once genuine testimonials are available. -->
+
+    <!-- ============ SERVICE AREA ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Service area</span>
+          <h2>Proudly serving the local community</h2>
+          <!-- TODO: confirm exact suburbs/state with Taz -->
+          <p>Based in the Gray &amp; St Marys area, covering the surrounding region.</p>
+        </div>
+        <div class="area-chips" data-reveal>
+          <span class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Gray</span>
+          <span class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> St Marys</span>
+          <span class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Surrounding areas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div>
+            <h2>Ready to power up your project?</h2>
+            <p>Get a free, no-obligation quote — or just call for straight answers about your job.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a free quote</a>
+            <!-- TODO: real phone number -->
+            <a href="tel:+61000000000" class="btn btn-ghost btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              0000 000 000
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container">
-      <div>
-        <strong>Taz Electrical</strong><br />
-        Serving Gray, St Marys &amp; surrounding areas
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="Taz Electrical — home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z" fill="#141005"/></svg>
+            </span>
+            <span class="brand-name">Taz<em>Electrical</em></span>
+          </a>
+          <p>Safe, tidy, code-compliant electrical work for homes and businesses across Gray, St Marys and surrounding areas.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#wiring">Wiring &amp; rewiring</a></li>
+            <li><a href="services.html#switchboards">Switchboards</a></li>
+            <li><a href="services.html#lighting">Lighting &amp; LED</a></li>
+            <li><a href="services.html#emergency">Emergency callouts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <!-- TODO: replace with real phone/email -->
+            <li><a href="tel:+61000000000">0000 000 000</a></li>
+            <li><a href="mailto:info@tazelectrical.example">info@tazelectrical.example</a></li>
+            <li>Gray &amp; St Marys, Australia</li>
+            <li>Mon–Fri, 7am–5pm</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <!-- TODO: replace with real phone/email -->
-        <a href="tel:+61000000000">Call Now</a> &middot;
-        <a href="mailto:info@tazelectrical.example">Email Us</a>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Taz Electrical. All rights reserved.</span>
+        <!-- TODO: real electrical licence number -->
+        <span>Licensed electrician · Lic. No. 000000</span>
       </div>
-      <div>&copy; 2026 Taz Electrical. All rights reserved.</div>
     </div>
   </footer>
 
