@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Taz Electrical — Business Details Form</title>
+<style>
+  :root {
+    --ink: #16150f;
+    --dim: #55534a;
+    --line: #16150f;
+    --volt: #ffd400;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "Roboto Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #eeece4;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 24px;
+  }
+  .sheet {
+    background: #fff;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 44px;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+  }
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 14px;
+    margin-bottom: 8px;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 6px;
+    font-weight: 800; font-size: 1.3rem;
+    letter-spacing: 0.02em; text-transform: uppercase;
+  }
+  .brand svg { width: 18px; height: 18px; color: var(--volt);
+    filter: drop-shadow(0 0 1px rgba(22,21,15,.7)); }
+  .doc-meta {
+    font-family: var(--mono); font-size: 0.68rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--dim); text-align: right; padding-top: 4px;
+  }
+  .lede {
+    color: var(--dim); font-size: 0.92rem;
+    margin: 0 0 26px; max-width: 60ch;
+  }
+
+  h2 {
+    font-family: var(--mono); font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink);
+    margin: 26px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(22,21,15,0.25);
+  }
+
+  .field { margin-bottom: 14px; }
+  .field label {
+    display: block; font-weight: 600; font-size: 0.9rem;
+    margin-bottom: 3px;
+  }
+  .field .hint { font-weight: 400; color: var(--dim); font-size: 0.82rem; }
+  .line {
+    border-bottom: 1.5px solid var(--ink);
+    min-height: 26px;
+    width: 100%;
+  }
+  .line.tall { min-height: 52px; }
+  .row { display: flex; gap: 22px; }
+  .row .field { flex: 1; }
+
+  .choice {
+    display: inline-flex; align-items: center; gap: 7px;
+    margin-right: 22px; font-size: 0.9rem;
+  }
+  .box {
+    width: 16px; height: 16px; border: 1.5px solid var(--ink);
+    display: inline-block; flex-shrink: 0;
+  }
+
+  ul.services {
+    list-style: none; margin: 6px 0 0; padding: 0;
+    columns: 2; column-gap: 28px;
+  }
+  ul.services li {
+    display: flex; align-items: center; gap: 9px;
+    padding: 4px 0; font-size: 0.9rem;
+    break-inside: avoid;
+  }
+
+  .note {
+    margin-top: 26px; padding: 12px 14px;
+    background: rgba(255,212,0,0.16);
+    border: 1px solid rgba(22,21,15,0.3);
+    font-size: 0.82rem; color: var(--ink);
+  }
+
+  .print-btn {
+    display: block; margin: 0 auto 20px; max-width: 780px;
+    text-align: right;
+  }
+  .print-btn button {
+    font-family: var(--mono); font-size: 0.8rem; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    background: var(--ink); color: #fff; border: 0;
+    padding: 11px 20px; cursor: pointer;
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; font-size: 12px; }
+    .sheet { box-shadow: none; max-width: none; padding: 0; }
+    .print-btn { display: none; }
+    .note { background: none; }
+    h2 { margin-top: 18px; }
+    @page { margin: 14mm; }
+  }
+</style>
+</head>
+<body>
+  <div class="print-btn"><button onclick="window.print()">Print / Save as PDF</button></div>
+  <div class="sheet">
+    <header>
+      <div class="brand">TAZ<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>ELECTRICAL</div>
+      <div class="doc-meta">Business details<br />Website set-up</div>
+    </header>
+    <p class="lede">Hi Peter — just need a few details to put your website together. Fill in whatever you know (pen is fine), skip anything you're unsure of, and hand it back to Jaycob. Nothing here is locked in — we can change any of it later.</p>
+
+    <h2>1 · Contact</h2>
+    <div class="field">
+      <label>Phone number <span class="hint">— the one customers should call</span></label>
+      <div class="line"></div>
+    </div>
+    <div class="field">
+      <label>Your name <span class="hint">— if you'd like it shown on the site</span></label>
+      <div class="line"></div>
+    </div>
+    <div class="field">
+      <label>Show your name on the website?</label>
+      <span class="choice"><span class="box"></span> Yes, show my name</span>
+      <span class="choice"><span class="box"></span> No, business name only</span>
+    </div>
+    <div class="field">
+      <label>Do you want an email address on the site too? <span class="hint">— right now it's phone-only, which is totally fine</span></label>
+      <span class="choice"><span class="box"></span> No, phone only</span>
+      <span class="choice"><span class="box"></span> Yes — email:</span>
+      <div class="line"></div>
+    </div>
+
+    <h2>2 · Where you work</h2>
+    <div class="field">
+      <label>Which St Marys, and what state? <span class="hint">— there are a few in Australia (NSW / SA / TAS…)</span></label>
+      <div class="line"></div>
+    </div>
+    <div class="field">
+      <label>Suburbs / areas you cover</label>
+      <div class="line"></div>
+    </div>
+
+    <h2>3 · Licence &amp; business</h2>
+    <div class="row">
+      <div class="field">
+        <label>Electrical licence number</label>
+        <div class="line"></div>
+      </div>
+      <div class="field">
+        <label>ABN <span class="hint">(if you have one)</span></label>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="field">
+      <label>Do you carry insurance (public liability)?</label>
+      <span class="choice"><span class="box"></span> Yes</span>
+      <span class="choice"><span class="box"></span> No</span>
+    </div>
+
+    <h2>4 · Hours</h2>
+    <div class="field">
+      <label>Normal working hours</label>
+      <div class="line"></div>
+    </div>
+    <div class="field">
+      <label>Do you do after-hours / emergency callouts?</label>
+      <span class="choice"><span class="box"></span> Yes, 24/7</span>
+      <span class="choice"><span class="box"></span> Sometimes / by arrangement</span>
+      <span class="choice"><span class="box"></span> No</span>
+    </div>
+
+    <h2>5 · The work</h2>
+    <div class="field">
+      <label>Tick the jobs you do — cross out any you don't, add anything missing:</label>
+      <ul class="services">
+        <li><span class="box"></span> Rewires &amp; new wiring</li>
+        <li><span class="box"></span> Switchboards &amp; safety switches</li>
+        <li><span class="box"></span> Lights, fans &amp; LED</li>
+        <li><span class="box"></span> Power points</li>
+        <li><span class="box"></span> Fault finding &amp; repairs</li>
+        <li><span class="box"></span> Small commercial jobs</li>
+      </ul>
+    </div>
+    <div class="field">
+      <label>Anything to add?</label>
+      <div class="line"></div>
+    </div>
+
+    <h2>6 · Logo &amp; photos</h2>
+    <div class="field">
+      <label>Do you already have a logo?</label>
+      <span class="choice"><span class="box"></span> Yes — I'll send the file</span>
+      <span class="choice"><span class="box"></span> No — happy for one to be made</span>
+    </div>
+    <div class="field">
+      <label>Any colours you like (or hate)?</label>
+      <div class="line"></div>
+    </div>
+    <div class="field">
+      <label>Any photos we can use? <span class="hint">— you on a job, the van, finished work</span></label>
+      <span class="choice"><span class="box"></span> Yes — I'll send some</span>
+      <span class="choice"><span class="box"></span> Not right now</span>
+    </div>
+
+    <h2>7 · Anything else</h2>
+    <div class="field">
+      <div class="line tall"></div>
+      <div class="line tall"></div>
+    </div>
+
+    <div class="note">
+      <strong>Jaycob:</strong> keep the filled-in copy off the public repo — licence number, ABN and personal details shouldn't be committed to GitHub. Take the answers by paper or private email and I'll wire them into the site.
+    </div>
+  </div>
+</body>
+</html>

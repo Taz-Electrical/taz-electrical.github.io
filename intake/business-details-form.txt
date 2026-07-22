@@ -1,0 +1,51 @@
+TAZ ELECTRICAL — BUSINESS DETAILS (for the website)
+====================================================
+
+Hi Peter — a few details to build your site. Answer what you know,
+skip what you don't, we can change any of it later.
+
+1 · CONTACT
+- Phone number (for customers to call): ______________________________
+- Your name (if you'd like it shown):   ______________________________
+- Show your name on the site?           [ ] Yes   [ ] Business name only
+- Email on the site too?                [ ] No, phone only
+                                        [ ] Yes: ___________________________
+
+2 · WHERE YOU WORK
+- Which St Marys + what state? (NSW / SA / TAS…): ____________________
+- Suburbs / areas you cover: _________________________________________
+
+3 · LICENCE & BUSINESS
+- Electrical licence number: _________________________________________
+- ABN (if you have one): _____________________________________________
+- Public liability insurance?           [ ] Yes   [ ] No
+
+4 · HOURS
+- Normal working hours: ______________________________________________
+- After-hours / emergency callouts?     [ ] Yes, 24/7
+                                        [ ] By arrangement   [ ] No
+
+5 · THE WORK  (tick what you do, cross out what you don't, add anything)
+   [ ] Rewires & new wiring
+   [ ] Switchboards & safety switches
+   [ ] Lights, fans & LED
+   [ ] Power points
+   [ ] Fault finding & repairs
+   [ ] Small commercial jobs
+   Anything to add? ___________________________________________________
+
+6 · LOGO & PHOTOS
+- Have a logo already?                  [ ] Yes, I'll send it
+                                        [ ] No, happy for one to be made
+- Colours you like (or hate): ________________________________________
+- Any photos we can use? (you on a job, the van, finished work)
+                                        [ ] Yes, I'll send some  [ ] Not now
+
+7 · ANYTHING ELSE
+_____________________________________________________________________
+_____________________________________________________________________
+
+---
+NOTE FOR JAYCOB: don't commit the filled-in answers to the public repo —
+licence no., ABN and personal details shouldn't live on GitHub. Keep the
+answers on paper or in a private email and they'll get wired into the site.
