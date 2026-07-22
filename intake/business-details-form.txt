@@ -46,6 +46,8 @@ _____________________________________________________________________
 _____________________________________________________________________
 
 ---
-NOTE FOR JAYCOB: don't commit the filled-in answers to the public repo —
-licence no., ABN and personal details shouldn't live on GitHub. Keep the
-answers on paper or in a private email and they'll get wired into the site.
+NOTE FOR JAYCOB: everything on this form is fine to go on the public site —
+a licence number and ABN are public info anyway. Just leave out any private
+side-notes you wouldn't want published. Filling this in doesn't change the
+website by itself — the details still have to be added into the site file
+(index.html).
