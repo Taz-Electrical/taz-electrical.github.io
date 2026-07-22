@@ -4,146 +4,151 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Taz Electrical — Gray &amp; St Marys</title>
-  <meta name="description" content="Meet Taz — a licensed local electrician serving Gray, St Marys and surrounding areas with honest, quality electrical work." />
-  <meta name="theme-color" content="#0a0f1a" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0f1a'/%3E%3Cpath d='M36 6 14 38h12l-4 20 22-32H32l4-20z' fill='%23ffb52e'/%3E%3C/svg%3E" />
+  <meta name="description" content="Meet Taz — a licensed local electrician serving Gray, St Marys and surrounds. Honest work, done right the first time." />
+  <meta name="theme-color" content="#0d0d0b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d0d0b'/%3E%3Cpath d='M36 6 14 38h12l-4 20 22-32H32l4-20z' fill='%23ffd400'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand" aria-label="Taz Electrical — home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z" fill="#141005"/></svg>
-        </span>
-        <span class="brand-name">Taz<em>Electrical</em></span>
+    <div class="container header-bar">
+      <a class="wordmark" href="index.html" aria-label="Taz Electrical — home">
+        TAZ<svg class="bolt" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>ELECTRICAL
       </a>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html" aria-current="page">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <!-- TODO: replace with Taz's real phone number -->
-          <a class="btn btn-primary btn-sm" href="tel:+61000000000">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            0000 000 000
-          </a>
-        </div>
+        <ol class="nav-list">
+          <li><a href="index.html"><span class="n">01</span>Home</a></li>
+          <li><a href="services.html"><span class="n">02</span>Services</a></li>
+          <li><a href="about.html" aria-current="page"><span class="n">03</span>About</a></li>
+          <li><a href="contact.html"><span class="n">04</span>Contact</a></li>
+        </ol>
+        <!-- TODO: replace with Taz's real phone number -->
+        <a class="btn btn-volt nav-call" href="tel:+61000000000">Call 0000 000 000</a>
       </nav>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+        <span></span><span></span>
       </button>
     </div>
   </header>
 
   <main id="main">
 
-    <section class="page-hero">
+    <section class="page-hero on-void">
       <div class="container">
-        <span class="eyebrow" data-reveal>About</span>
-        <h1 data-reveal>The local sparkie<br /><span class="text-volt">you can count on.</span></h1>
-        <p class="lead" data-reveal style="--d:.08s">Licensed, insured, and dedicated to doing quality electrical work the right way.</p>
+        <p class="mono-label">[ 003 — About ]</p>
+        <h1 class="giant">
+          <span class="line"><span>Meet</span></span>
+          <span class="line"><span class="txt-volt">Taz<span style="color:var(--paper);">.</span></span></span>
+        </h1>
+        <p class="lead">One local sparkie. One standard of work. Zero excuses.</p>
       </div>
     </section>
 
-    <section class="section" style="padding-top: clamp(20px, 3vw, 40px);">
-      <div class="container split">
-        <div class="photo-frame" data-reveal>
+    <section class="on-paper section">
+      <div class="container bio-grid">
+        <div class="polaroid" data-reveal>
+          <span class="strip" aria-hidden="true"></span>
           <!-- TODO: replace with a real photo of Taz / the team -->
-          <div class="ph-inner">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 15-4.5-4.5L9 18"/></svg>
-            <p>Photo of Taz<br />coming soon</p>
-          </div>
+          <div class="ph">Photo of Taz on the tools<br />— coming soon —</div>
+          <span class="caption">Fig. 01 — The man himself</span>
         </div>
-        <div data-reveal style="--d:.1s">
-          <span class="eyebrow">G'day, I'm Taz</span>
-          <h2 style="font-size: clamp(1.9rem, 3.8vw, 2.7rem);">Honest work, done right the first time</h2>
+        <div class="bio-copy" data-reveal style="--d:.1s">
+          <p class="mono-label">[ G'day — ]</p>
+          <h2>Honest work, done right the first time</h2>
           <!-- TODO: replace with Taz's real bio and experience -->
           <p>
             I'm a licensed electrician based in the Gray and St Marys area, with hands-on
             experience across residential and commercial jobs of every size. I started
-            Taz Electrical for a simple reason: locals deserve an electrician who shows up
-            on time, quotes fairly, and does the job properly.
+            Taz Electrical for a simple reason: locals deserve a sparkie who shows up on
+            time, quotes fairly, and does the job properly.
           </p>
           <p>
-            Whether it's a single power point or a full rewire, you'll get the same
-            standard every time — careful work, honest advice, and a site left cleaner
-            than I found it.
+            Whether it's a single power point or a full rewire, you get the same standard
+            every time — careful work, straight answers, and a site left cleaner than I
+            found it.
           </p>
-          <div class="hero-actions" style="margin-top: 28px; margin-bottom: 0;">
-            <a href="contact.html" class="btn btn-primary">Work with Taz
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </div>
+          <a href="contact.html" class="btn btn-volt" style="margin-top: 10px;">Work with Taz</a>
         </div>
       </div>
     </section>
 
     <!-- ============ VALUES ============ -->
-    <section class="section tinted">
+    <section class="on-void section">
       <div class="container">
-        <div class="section-head center" data-reveal>
-          <span class="eyebrow">What we stand for</span>
-          <h2>The Taz Electrical standard</h2>
+        <div class="index-head" data-reveal>
+          <h2>The <span class="txt-outline">standard</span></h2>
+          <p class="mono-label" style="margin:0;">[ What we stand for ]</p>
         </div>
-        <div class="grid cols-4">
-          <div class="card" data-reveal>
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3z"/><path d="m9 11.5 2 2 4-4"/></svg></div>
+        <div class="stamps" data-reveal>
+          <div class="stamp">
+            <span class="s-n">STD-01</span>
             <h3>Safety first</h3>
-            <p>Tested and certified to Australian standards on every single job.</p>
+            <p>Tested and certified to Australian standards. Every job, no exceptions.</p>
           </div>
-          <div class="card" data-reveal style="--d:.08s">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg></div>
+          <div class="stamp">
+            <span class="s-n">STD-02</span>
             <h3>Tidy work</h3>
-            <p>Neat cabling, clean finishes, and no mess left behind. Ever.</p>
+            <p>Neat cabling, clean finishes, no mess left behind. Ever.</p>
           </div>
-          <div class="card" data-reveal style="--d:.16s">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 7H9.5a2.5 2.5 0 0 0 0 5h5a2.5 2.5 0 0 1 0 5H6"/></svg></div>
+          <div class="stamp">
+            <span class="s-n">STD-03</span>
             <h3>Fair pricing</h3>
-            <p>Upfront quotes with no surprises — the price agreed is the price paid.</p>
+            <p>Upfront quotes, zero surprises. The price agreed is the price paid.</p>
           </div>
-          <div class="card" data-reveal style="--d:.24s">
-            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <div class="stamp">
+            <span class="s-n">STD-04</span>
             <h3>On time</h3>
-            <p>Real arrival windows, a call ahead, and respect for your schedule.</p>
+            <p>Real arrival windows and a call ahead. Your day matters too.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============ CREDENTIALS ============ -->
-    <section class="section">
+    <section class="on-paper section">
       <div class="container">
-        <div class="stats" data-reveal>
+        <p class="mono-label" data-reveal>[ Paperwork — in order ]</p>
+        <dl class="spec" data-reveal>
           <!-- TODO: replace with real credentials / licence details -->
-          <div class="stat"><span class="num">Lic.</span><span class="lbl">Licensed electrician — No. 000000</span></div>
-          <div class="stat"><span class="num">Insured</span><span class="lbl">Full public liability cover</span></div>
-          <div class="stat"><span class="num">Local</span><span class="lbl">Based in Gray &amp; St Marys</span></div>
-          <div class="stat"><span class="num">AS/NZS</span><span class="lbl">Compliant with AU standards</span></div>
-        </div>
+          <div class="spec-row">
+            <dt>Licence</dt>
+            <dd>Licensed electrician — No. 000000</dd>
+          </div>
+          <div class="spec-row">
+            <dt>Insurance</dt>
+            <dd>Full public liability cover</dd>
+          </div>
+          <div class="spec-row">
+            <dt>Standards</dt>
+            <dd>Work tested &amp; compliant with Australian standards</dd>
+          </div>
+          <div class="spec-row">
+            <dt>Based in</dt>
+            <dd>Gray &amp; St Marys, Australia</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
-    <!-- ============ CTA ============ -->
-    <section class="section" style="padding-top: 0;">
+    <!-- ============ MEGA CTA ============ -->
+    <section class="on-void">
       <div class="container">
-        <div class="cta-band" data-reveal>
-          <div>
-            <h2>Work with a local you can trust</h2>
-            <p>Get in touch today to talk through your next electrical project — big or small.</p>
-          </div>
-          <div class="cta-actions">
-            <a href="contact.html" class="btn btn-primary btn-lg">Contact Taz</a>
-            <a href="services.html" class="btn btn-ghost btn-lg">View services</a>
-          </div>
+        <a class="mega-cta" href="contact.html" data-reveal>
+          <span class="row">
+            <span class="t">Let's talk<br />your job</span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <div class="cta-meta">
+          <!-- TODO: real phone/email -->
+          <span>Ph — <a href="tel:+61000000000">0000 000 000</a></span>
+          <span>Em — <a href="mailto:info@tazelectrical.example">info@tazelectrical.example</a></span>
+          <span>Mon–Fri 7–5 · Emergencies 24/7</span>
         </div>
       </div>
     </section>
@@ -151,16 +156,14 @@
 
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
+    <div class="tape" aria-hidden="true"></div>
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="brand" aria-label="Taz Electrical — home">
-            <span class="brand-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z" fill="#141005"/></svg>
-            </span>
-            <span class="brand-name">Taz<em>Electrical</em></span>
+        <div>
+          <a class="wordmark" href="index.html" aria-label="Taz Electrical — home">
+            TAZ<svg class="bolt" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>ELECTRICAL
           </a>
-          <p>Safe, tidy, code-compliant electrical work for homes and businesses across Gray, St Marys and surrounding areas.</p>
+          <p class="footer-blurb">Straight-talking electrical work for homes and businesses across Gray, St Marys and surrounds.</p>
         </div>
         <div>
           <h4>Explore</h4>
@@ -172,29 +175,32 @@
           </ul>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4>The work</h4>
           <ul>
-            <li><a href="services.html#wiring">Wiring &amp; rewiring</a></li>
+            <li><a href="services.html#wiring">Wiring &amp; rewires</a></li>
             <li><a href="services.html#switchboards">Switchboards</a></li>
             <li><a href="services.html#lighting">Lighting &amp; LED</a></li>
-            <li><a href="services.html#emergency">Emergency callouts</a></li>
+            <li><a href="services.html#emergency">Emergency</a></li>
           </ul>
         </div>
         <div>
-          <h4>Get in touch</h4>
+          <h4>Contact</h4>
           <ul>
             <!-- TODO: replace with real phone/email -->
             <li><a href="tel:+61000000000">0000 000 000</a></li>
             <li><a href="mailto:info@tazelectrical.example">info@tazelectrical.example</a></li>
             <li>Gray &amp; St Marys, Australia</li>
-            <li>Mon–Fri, 7am–5pm</li>
+            <li>Mon–Fri 7am–5pm</li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; <span id="year">2026</span> Taz Electrical. All rights reserved.</span>
+    </div>
+    <div class="footer-mark" aria-hidden="true">Taz Electrical</div>
+    <div class="container">
+      <div class="footer-legal">
+        <span>&copy; <span id="year">2026</span> Taz Electrical</span>
         <!-- TODO: real electrical licence number -->
-        <span>Licensed electrician · Lic. No. 000000</span>
+        <span>Licensed electrician — Lic. No. 000000</span>
       </div>
     </div>
   </footer>

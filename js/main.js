@@ -6,7 +6,7 @@
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
 
-  /* Sticky header: gain glass background once scrolled */
+  /* Header gains solid background once scrolled */
   function onScroll() {
     if (header) {
       header.classList.toggle("scrolled", window.scrollY > 10);
@@ -54,7 +54,7 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
     revealItems.forEach(function (el) {
       observer.observe(el);
@@ -80,7 +80,7 @@
       if (status) {
         status.classList.add("ok");
         status.textContent =
-          "Thanks! This form isn't connected yet — please call or email Taz Electrical directly and we'll sort you out.";
+          "Received — but this form isn't wired to email yet. Call or email Taz directly and we'll sort you out.";
       }
     });
   }
