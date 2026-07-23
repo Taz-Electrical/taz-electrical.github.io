@@ -1,13 +1,17 @@
 # Electrical, St Marys — Website
 
 Single-page site for **Electrical, St Marys** — a licensed electrician in
-**St Marys, Australia**. The webmaster is Jaycob (repo owner); the
-electrician is his friend **Peter**.
+**St Marys, Tasmania**. The webmaster is Jaycob (repo owner); the
+electrician is his friend **Peter** ("Pete", shown on the site by his
+request).
 
 Note: the business was previously called "Taz Electrical" and was renamed
 to match the logo kit ("Electrical / St Marys", no "Taz"). The repo and
 live URL keep the old name (`taz-electrical.github.io`) — that's fine, the
 URL doesn't have to match the business name.
+
+Business details came from Peter's completed intake form (his handwriting).
+A few readings still need confirming — see Open questions.
 
 ## Design direction — read this first
 
@@ -18,15 +22,22 @@ plain-spoken, confident. **Do not add salesy sections, testimonials,
 stats, forms, marquees, or animation** unless Peter asks. When in doubt,
 remove.
 
-Constraints from Peter:
-- St Marys only — **do not mention Gray** (dropped by request)
-- **Phone contact only** — no email address, no enquiry form
+Constraints from Peter (per his intake form):
+- Service area: **St Marys, Gray & Fingal** (Tasmania). NB: an earlier
+  instruction to drop Gray was superseded — Peter listed Gray himself.
+- **Text contact only** — the number is a mobile; Peter wrote "text only"
+  twice, so all CTAs are `sms:` links that say "Text", not "Call". No
+  email, no enquiry form.
+- Customers are asked to text their name + a brief job description (his
+  request) — that caption sits under the hero button.
 
 ## Status
 
 Live at https://taz-electrical.github.io (GitHub Pages, deploys from
-`main`). All business details are placeholder — search `TODO` for every
-spot needing a real value (phone, licence no., hours, exact state).
+`main`). Real business details are now in place from Peter's form. A few
+handwritten values are unconfirmed and marked with `TODO` — the phone
+number's middle digit (used `0474 535 090`) and the hours (read as
+Mon–Fri 6am–5pm).
 
 ## Tech stack
 
@@ -70,11 +81,21 @@ sun behind two cream mountain peaks; the wordmark is "Electr[i]cal" (the
 - Never invent business facts, reviews, or stats. Anything fake must be
   `TODO`-commented.
 - The phone number appears in several spots (header, hero button,
-  contact, footer legal) — update them all together.
+  contact) as `sms:` links — update them all together.
+
+## Known details (from Peter's form)
+
+- Contact: **Pete**, mobile **0474 535 090** (middle digit unconfirmed),
+  **text only**
+- Area: **St Marys, Gray & Fingal, Tasmania**
+- Licence: **Contractor No. 004374773** · ABN **66 877 574 316** · insured
+- Hours: **Mon–Fri 6am–5pm** (read from handwriting), after-hours by
+  arrangement
+- Colours: green (matches brand) · Photos: none yet
 
 ## Open questions for Peter
 
-- Real phone number, electrical licence number, ABN
-- Which St Marys / state (there are several in Australia)
-- Real hours; whether after-hours callouts are offered
-- Any real photos to use later
+- Confirm exact phone digits (`0474 535 0?0`) and hours (`6`am start?)
+- Confirm "Fault finding & repairs" is offered (form tick was unclear —
+  currently listed)
+- Real photos, when he has some
