@@ -10,8 +10,8 @@ to match the logo kit ("Electrical / St Marys", no "Taz"). The repo and
 live URL keep the old name (`taz-electrical.github.io`) — that's fine, the
 URL doesn't have to match the business name.
 
-Business details came from Peter's completed intake form (his handwriting).
-A few readings still need confirming — see Open questions.
+Business details came from Peter's completed intake form and were
+confirmed by Jaycob.
 
 ## Design direction — read this first
 
@@ -34,10 +34,8 @@ Constraints from Peter (per his intake form):
 ## Status
 
 Live at https://taz-electrical.github.io (GitHub Pages, deploys from
-`main`). Real business details are now in place from Peter's form. A few
-handwritten values are unconfirmed and marked with `TODO` — the phone
-number's middle digit (used `0474 535 090`) and the hours (read as
-Mon–Fri 6am–5pm).
+`main`). Real business details are in place and confirmed. Only outstanding
+item: real photos, if/when Peter provides them.
 
 ## Tech stack
 
@@ -85,17 +83,14 @@ sun behind two cream mountain peaks; the wordmark is "Electr[i]cal" (the
 
 ## Known details (from Peter's form)
 
-- Contact: **Pete**, mobile **0474 535 090** (middle digit unconfirmed),
-  **text only**
+- Contact: **Pete**, mobile **0474 535 090**, **text only**
 - Area: **St Marys, Gray & Fingal, Tasmania**
 - Licence: **Contractor No. 004374773** · ABN **66 877 574 316** · insured
-- Hours: **Mon–Fri 6am–5pm** (read from handwriting), after-hours by
-  arrangement
+- Hours: **Mon–Fri 8am–5pm**, after-hours by arrangement
+- Services: rewires, switchboards, lights/fans/LED, power points, fault
+  finding & repairs, small commercial
 - Colours: green (matches brand) · Photos: none yet
 
 ## Open questions for Peter
 
-- Confirm exact phone digits (`0474 535 0?0`) and hours (`6`am start?)
-- Confirm "Fault finding & repairs" is offered (form tick was unclear —
-  currently listed)
 - Real photos, when he has some
