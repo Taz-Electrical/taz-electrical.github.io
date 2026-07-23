@@ -32,27 +32,32 @@ spot needing a real value (phone, licence no., hours, exact state).
 
 Plain HTML/CSS/JS. No build step, no framework, no package manager.
 One page: `index.html`. `css/styles.css` holds the whole design;
-`js/main.js` only sets the footer year.
+`js/main.js` only sets the footer year. `assets/logo/` holds the source
+logo kit SVGs.
 
 ## Brand & design system
 
-From Peter's logo kit — a mountain-and-sun mark in a circle, with the
-wordmark "Electr[i]cal" (the "i" dotted with a lightbulb) over a spaced
-"ST MARYS" locality line.
+Built on Peter's **official designer logo kit** — the source SVGs live in
+`assets/logo/` (`logo-primary`, `logo-reversed`, `logo-mono`,
+`icon-roundel`, `icon-roundel-mono`). The mark is a circle with an amber
+sun behind two cream mountain peaks; the wordmark is "Electr[i]cal" (the
+"i" dotted with a lightbulb) over a spaced "ST MARYS" line.
 
-- Palette (CSS vars at top of `styles.css`): `--green` #1b3d30 (forest),
-  `--amber` #e2a42b (sun), `--cream` #f4f0e5 (paper). `--amber-deep` for
-  amber text on cream (contrast). Green and amber-deep carry all text.
-- The **logo mark is recreated as inline SVG**, not an image file: a
-  clipped green circle + amber sun + cream mountain polygon. The footer
-  uses an inverted variant (cream outline, transparent interior) so it
-  reads on the green background. The favicon is a small SVG data-URI of
-  the same mark. If Peter supplies exact logo files, they can replace the
-  inline SVG.
-- The bulb-dotted "i" is a tiny inline SVG (`.ibulb`); its base rings use
-  `currentColor` so it works in green (header) and cream (footer).
-- **System fonts only — no webfonts.** Headings `system-ui` 800; small
-  labels are letter-spaced uppercase; phone/legal use `ui-monospace`.
+- Exact palette (CSS vars at top of `styles.css`): `--green` #12332d,
+  `--amber` #e6a12b (sun), `--cream` #f7f3ea, `--amber-deep` #c98a1c
+  (amber text on cream, for contrast).
+- The **logo lockups are the designer's SVGs, inlined**: `logo-primary`
+  in the header, `logo-reversed` in the footer (its own dark rect matches
+  the footer green). Inline copies have their clipPath ids renamed
+  (`lp`/`lr`) to stay unique in the page. The favicon is a data-URI of
+  `icon-roundel`. Edit the artwork in `assets/logo/` and re-inline if it
+  changes.
+- **Brand fonts, loaded from Google Fonts:** Archivo (800) for the
+  wordmark/headings, Space Grotesk (500) for "ST MARYS" and small labels.
+  Body stays `system-ui`. NOTE: this deliberately reintroduces webfonts
+  (two files, ~small) so the wordmark matches the kit exactly — it's the
+  one external dependency on the page. Can be self-hosted from the repo
+  later to return to zero third-party requests, if wanted.
 - Section rhythm: cream → cream → **green band** (the pitch line, echoes
   the dark logo lockup) → cream → green footer. No motion beyond hovers.
 

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 150" width="620" height="150">
+
+<g transform="translate(15,15)"><svg width="120" height="120" viewBox="0 0 120 120"><clipPath id="c"><circle cx="60" cy="60" r="53"></circle></clipPath><circle cx="60" cy="60" r="53" fill="#12332d"></circle><g clip-path="url(#c)"><circle cx="60" cy="50" r="24" fill="none" stroke="#f7f3ea" stroke-width="3"></circle><polygon points="12,104 44,58 74,104" fill="#f7f3ea"></polygon><polygon points="52,104 84,48 116,104" fill="#f7f3ea"></polygon></g></svg></g>
+<g font-family="Archivo, sans-serif" font-weight="800" font-size="44" letter-spacing="-0.5">
+  <text x="158" y="72" fill="#12332d">Electr</text>
+  <g transform="translate(305,32)"><svg width="22" height="44" viewBox="0 0 18 36"><circle cx="9" cy="10" r="7" fill="#e6a12b"></circle><rect x="5" y="18" width="8" height="3.5" rx="1" fill="#12332d"></rect><rect x="6" y="23" width="6" height="3" fill="#12332d"></rect><rect x="6.3" y="29" width="5.4" height="6" rx="1.5" fill="#12332d"></rect></svg></g>
+  <text x="330" y="72" fill="#12332d">cal</text>
+</g>
+<text x="159" y="104" font-family="&#39;Space Grotesk&#39;, sans-serif" font-weight="500" font-size="17" letter-spacing="7" fill="#12332d">ST MARYS</text>
+</svg>
