@@ -1,16 +1,22 @@
-# Taz Electrical — Website
+# Electrical, St Marys — Website
 
-Single-page site for **Taz Electrical**, a licensed electrician in
+Single-page site for **Electrical, St Marys** — a licensed electrician in
 **St Marys, Australia**. The webmaster is Jaycob (repo owner); the
-electrician is his friend **Peter** (business trades as "Taz Electrical").
+electrician is his friend **Peter**.
+
+Note: the business was previously called "Taz Electrical" and was renamed
+to match the logo kit ("Electrical / St Marys", no "Taz"). The repo and
+live URL keep the old name (`taz-electrical.github.io`) — that's fine, the
+URL doesn't have to match the business name.
 
 ## Design direction — read this first
 
-v4 ("Sparky in town"). Peter's explicit feedback on the previous, flashier
-design: *"far simpler and less trying to sell it — more just stating
-there's a sparky in town."* That is the brief. Quiet, plain-spoken,
-confident. **Do not add salesy sections, testimonials, stats, forms,
-marquees, or animation** unless Peter asks. When in doubt, remove.
+v5 ("Mountain & sun"), built around Peter's logo kit. Peter's brief on the
+earlier, flashier attempts: *"far simpler and less trying to sell it —
+more just stating there's a sparky in town."* That is the brief. Quiet,
+plain-spoken, confident. **Do not add salesy sections, testimonials,
+stats, forms, marquees, or animation** unless Peter asks. When in doubt,
+remove.
 
 Constraints from Peter:
 - St Marys only — **do not mention Gray** (dropped by request)
@@ -28,28 +34,42 @@ Plain HTML/CSS/JS. No build step, no framework, no package manager.
 One page: `index.html`. `css/styles.css` holds the whole design;
 `js/main.js` only sets the footer year.
 
-## Design system
+## Brand & design system
 
-Paper (#f4f1e8), ink (#16150f), and one dab of hazard yellow (#ffd400)
-used as underline/accent only. **System fonts only — no webfonts**:
-Georgia (headings), system-ui (body), ui-monospace (small labels).
-Zero external requests, instant load, nothing to break — deliberate,
-don't add font CDNs back. Sections separated by hairline rules. No
-motion beyond hover states.
+From Peter's logo kit — a mountain-and-sun mark in a circle, with the
+wordmark "Electr[i]cal" (the "i" dotted with a lightbulb) over a spaced
+"ST MARYS" locality line.
+
+- Palette (CSS vars at top of `styles.css`): `--green` #1b3d30 (forest),
+  `--amber` #e2a42b (sun), `--cream` #f4f0e5 (paper). `--amber-deep` for
+  amber text on cream (contrast). Green and amber-deep carry all text.
+- The **logo mark is recreated as inline SVG**, not an image file: a
+  clipped green circle + amber sun + cream mountain polygon. The footer
+  uses an inverted variant (cream outline, transparent interior) so it
+  reads on the green background. The favicon is a small SVG data-URI of
+  the same mark. If Peter supplies exact logo files, they can replace the
+  inline SVG.
+- The bulb-dotted "i" is a tiny inline SVG (`.ibulb`); its base rings use
+  `currentColor` so it works in green (header) and cream (footer).
+- **System fonts only — no webfonts.** Headings `system-ui` 800; small
+  labels are letter-spaced uppercase; phone/legal use `ui-monospace`.
+- Section rhythm: cream → cream → **green band** (the pitch line, echoes
+  the dark logo lockup) → cream → green footer. No motion beyond hovers.
 
 ## Conventions
 
 - Keep it one page. If a second page is ever truly needed, mirror the
   header/footer manually (no build step).
-- Icons are inline SVGs (24px viewBox, currentColor).
+- Brand colours live only as CSS vars — change them there, not inline
+  (except inside the logo SVGs, which are self-contained).
 - Never invent business facts, reviews, or stats. Anything fake must be
   `TODO`-commented.
-- The phone number appears three times (header, hero button, contact) —
-  update all together.
+- The phone number appears in several spots (header, hero button,
+  contact, footer legal) — update them all together.
 
-## Open questions
+## Open questions for Peter
 
 - Real phone number, electrical licence number, ABN
 - Which St Marys / state (there are several in Australia)
 - Real hours; whether after-hours callouts are offered
-- Whether Peter wants his name on the site (currently business name only)
+- Any real photos to use later
