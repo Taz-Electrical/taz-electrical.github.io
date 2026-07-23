@@ -55,18 +55,17 @@ sun behind two cream mountain peaks; the wordmark is "Electr[i]cal" (the
 - Exact palette (CSS vars at top of `styles.css`): `--green` #12332d,
   `--amber` #e6a12b (sun), `--cream` #f7f3ea, `--amber-deep` #c98a1c
   (amber text on cream, for contrast).
-- The **logo lockups are the designer's SVGs, inlined**: `logo-primary`
-  in the header, `logo-reversed` in the footer (its own dark rect matches
-  the footer green). Inline copies have their clipPath ids renamed
-  (`lp`/`lr`) to stay unique in the page. The favicon is a data-URI of
-  `icon-roundel`. Edit the artwork in `assets/logo/` and re-inline if it
-  changes.
-- **Brand fonts, loaded from Google Fonts:** Archivo (800) for the
-  wordmark/headings, Space Grotesk (500) for "ST MARYS" and small labels.
-  Body stays `system-ui`. NOTE: this deliberately reintroduces webfonts
-  (two files, ~small) so the wordmark matches the kit exactly — it's the
-  one external dependency on the page. Can be self-hosted from the repo
-  later to return to zero third-party requests, if wanted.
+- The **logo lockups are the designer's outlined SVGs** (text converted
+  to vector paths — self-contained, no font needed), referenced as
+  `<img src="assets/logo/…">`: `logo-primary` in the header,
+  `logo-reversed` in the footer (its own dark rect matches the footer
+  green). The favicon is a data-URI of `icon-roundel`. To update the
+  logo, just replace the files in `assets/logo/`.
+- **Brand fonts, loaded from Google Fonts:** Archivo (800) for headings,
+  Space Grotesk (500) for small labels. Body stays `system-ui`. NOTE:
+  the logos are outlined so they DON'T need these — the fonts are only
+  for page text (hero headline, labels). This is the one external
+  dependency; can be self-hosted from the repo later if wanted.
 - Section rhythm: cream → cream → **green band** (the pitch line, echoes
   the dark logo lockup) → cream → green footer. No motion beyond hovers.
 
