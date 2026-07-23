@@ -83,9 +83,9 @@ sun behind two cream mountain peaks; the wordmark is "Electr[i]cal" (the
 
 ## Known details (from Peter's form)
 
-- Contact: **Pete**, mobile **0474 535 090**, **text only**
+- Contact: **Pete**, mobile **0478 535 090**, **text only**
 - Area: **St Marys, Gray & Fingal, Tasmania**
-- Licence: **Contractor No. 004374773** · ABN **66 877 574 316** · insured
+- Licence: **Contractor No. 004374773** · ABN **86 877 574 316** · insured
 - Hours: **Mon–Fri 8am–5pm**, after-hours by arrangement
 - Services: rewires, switchboards, lights/fans/LED, power points, fault
   finding & repairs, small commercial
