@@ -1,95 +1,55 @@
-# Electrical, St Marys — Website
+# CLAUDE.md
 
-Single-page site for **Electrical, St Marys** — a licensed electrician in
-**St Marys, Tasmania**. The webmaster is Jaycob (repo owner); the
-electrician is his friend **Peter** ("Pete", shown on the site by his
-request).
+## What this is
 
-Note: the business was previously called "Taz Electrical" and was renamed
-to match the logo kit ("Electrical / St Marys", no "Taz"). The repo and
-live URL keep the old name (`taz-electrical.github.io`) — that's fine, the
-URL doesn't have to match the business name.
+The website for **St Marys Electrical** — Peter Hammond, a sole-trader electrician in east coast Tasmania. Static site, no build step, served by GitHub Pages.
 
-Business details came from Peter's completed intake form and were
-confirmed by Jaycob.
+Live at **https://stmaryselectrical.au**
 
-## Design direction — read this first
+## Critical — do not break
 
-v5 ("Mountain & sun"), built around Peter's logo kit. Peter's brief on the
-earlier, flashier attempts: *"far simpler and less trying to sell it —
-more just stating there's a sparky in town."* That is the brief. Quiet,
-plain-spoken, confident. **Do not add salesy sections, testimonials,
-stats, forms, marquees, or animation** unless Peter asks. When in doubt,
-remove.
+**Never delete, rename or edit the `CNAME` file in the repo root.** It contains `stmaryselectrical.au` and is what binds the custom domain to GitHub Pages. Removing it takes the live site offline and requires reconfiguring DNS to recover.
 
-Constraints from Peter (per his intake form):
-- Service area: **St Marys, Gray & Fingal** (Tasmania). NB: an earlier
-  instruction to drop Gray was superseded — Peter listed Gray himself.
-- **Text contact only** — the number is a mobile; Peter wrote "text only"
-  twice, so all CTAs are `sms:` links that say "Text", not "Call". No
-  email, no enquiry form.
-- Customers are asked to text their name + a brief job description (his
-  request) — that caption sits under the hero button.
+If a task seems to call for cleaning up stray root-level files, `CNAME` is not one of them.
 
-## Status
+## Deployment
 
-Live at https://taz-electrical.github.io (GitHub Pages, deploys from
-`main`). Real business details are in place and confirmed. Only outstanding
-item: real photos, if/when Peter provides them.
+- Branch `main`, folder `/ (root)`, deploy from branch
+- Push to `main` → GitHub Pages redeploys → live in a minute or two
+- No build command, no CI, no framework
 
-## Tech stack
+This is a **user/org site**: the repo name must equal the account name (`Taz-Electrical` / `taz-electrical.github.io`). Do not rename the repo.
 
-Plain HTML/CSS/JS. No build step, no framework, no package manager.
-One page: `index.html`. `css/styles.css` holds the whole design;
-`js/main.js` only sets the footer year. `assets/logo/` holds the source
-logo kit SVGs.
+## Business details — keep accurate and consistent
 
-## Brand & design system
+These appear on the site and must match his Google Business Profile character for character. Do not paraphrase or reformat them.
 
-Built on Peter's **official designer logo kit** — the source SVGs live in
-`assets/logo/` (`logo-primary`, `logo-reversed`, `logo-mono`,
-`icon-roundel`, `icon-roundel-mono`). The mark is a circle with an amber
-sun behind two cream mountain peaks; the wordmark is "Electr[i]cal" (the
-"i" dotted with a lightbulb) over a spaced "ST MARYS" line.
+- **Name:** St Marys Electrical — no apostrophe, no comma, this word order
+- **Phone:** 0478 535 090
+- **Licence:** Contractor No. 004374773
+- **ABN:** 86 877 574 316
+- **Service area:** St Marys, Gray & Fingal, Tasmania
+- **Hours:** Mon–Fri, 8am–5pm. After-hours by arrangement
 
-- Exact palette (CSS vars at top of `styles.css`): `--green` #12332d,
-  `--amber` #e6a12b (sun), `--cream` #f7f3ea, `--amber-deep` #c98a1c
-  (amber text on cream, for contrast).
-- The **logo lockups are the designer's outlined SVGs** (text converted
-  to vector paths — self-contained, no font needed), referenced as
-  `<img src="assets/logo/…">`: `logo-primary` in the header,
-  `logo-reversed` in the footer (its own dark rect matches the footer
-  green). The favicon is a data-URI of `icon-roundel`. To update the
-  logo, just replace the files in `assets/logo/`.
-- **Brand fonts, loaded from Google Fonts:** Archivo (800) for headings,
-  Space Grotesk (500) for small labels. Body stays `system-ui`. NOTE:
-  the logos are outlined so they DON'T need these — the fonts are only
-  for page text (hero headline, labels). This is the one external
-  dependency; can be self-hosted from the repo later if wanted.
-- Section rhythm: cream → cream → **green band** (the pitch line, echoes
-  the dark logo lockup) → cream → green footer. No motion beyond hovers.
+He is based at Gray, not St Marys. The business is named for the nearest town. Don't "correct" this.
 
-## Conventions
+## Name consistency
 
-- Keep it one page. If a second page is ever truly needed, mirror the
-  header/footer manually (no build step).
-- Brand colours live only as CSS vars — change them there, not inline
-  (except inside the logo SVGs, which are self-contained).
-- Never invent business facts, reviews, or stats. Anything fake must be
-  `TODO`-commented.
-- The phone number appears in several spots (header, hero button,
-  contact) as `sms:` links — update them all together.
+The site has historically mixed **"Electrical, St Marys"**, **"Electrical St Marys"** and **"St Mary's Electrical"**. All three are wrong. The only correct form is **St Marys Electrical**.
 
-## Known details (from Peter's form)
+Inconsistent business names measurably hurt local search ranking, so this matters more than it looks.
 
-- Contact: **Pete**, mobile **0478 535 090**, **text only**
-- Area: **St Marys, Gray & Fingal, Tasmania**
-- Licence: **Contractor No. 004374773** · ABN **86 877 574 316** · insured
-- Hours: **Mon–Fri 8am–5pm**, after-hours by arrangement
-- Services: rewires, switchboards, lights/fans/LED, power points, fault
-  finding & repairs, small commercial
-- Colours: green (matches brand) · Photos: none yet
+## Contact method
 
-## Open questions for Peter
+Enquiries come in by **text, not email or a form**. Phone links use `sms:+61478535090`. Keep it that way unless asked otherwise — it's deliberate, he's a one-man operation working with his hands.
 
-- Real photos, when he has some
+## Design
+
+- Deep forest green `#12332d` — dominant colour, also the theme-colour meta tag
+- Ochre/gold accent
+- Warm cream background
+- Logos at `assets/logo/logo-primary.svg` and `logo-reversed.svg`
+
+## Audience
+
+Homeowners and small businesses in a rural town of roughly 700 people, skewing older. Plain language, no marketing jargon, fast loading on poor regional mobile signal. Keep the page lightweight — no heavy frameworks or large images.
