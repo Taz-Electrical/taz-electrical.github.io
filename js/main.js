@@ -1,4 +1,4 @@
-/* Taz Electrical — the only JS the one-pager needs */
+/* St Marys Electrical — the only JS the one-pager needs */
 (function () {
   "use strict";
   var year = document.getElementById("year");
